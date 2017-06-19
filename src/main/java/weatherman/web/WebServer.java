@@ -25,7 +25,7 @@ public class WebServer {
 		get("/", (req, res) -> "Hello World! I am WeatherMan, the weather bot!!");
 		
 		//post handle for WeatherMan chatbot
-		post("/asbot", new Route() {
+		post("/bot", new Route() {
 			public Object handle(Request request, Response response) {
 				
 				String body = request.body();
