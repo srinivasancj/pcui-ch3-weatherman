@@ -19,6 +19,7 @@ public class Chatbot {
 		Chatbot c = new Chatbot();
 		Scanner scanner = new Scanner(System.in);
 		String userUtterance;
+		
 		do {
 			System.out.print("User:");
 			userUtterance = scanner.nextLine();
@@ -32,7 +33,8 @@ public class Chatbot {
 			}
 			System.out.println("Bot:" + botUtterance);
 			
-		} while (true);
+		} while (!userUtterance.equals("QUIT"));
+		scanner.close();
 	}
 	
 	public Chatbot(){
