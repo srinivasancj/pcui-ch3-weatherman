@@ -1,4 +1,3 @@
-package weatherman.web;
 
 import static spark.Spark.*;
 
